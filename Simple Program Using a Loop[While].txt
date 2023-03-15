@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main(){
+ int number,x=1,total=0;
+    while(x<=5){
+        cin>>number;
+        total+=number;
+        x++;
+    }
+cout<<"Addition: "<<total<<endl;
+return 0;
+}
