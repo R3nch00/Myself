@@ -1,0 +1,9 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main (void){
+int i=1,n=10,sum=0;
+while(i<=n){
+    sum+=i;
+    i++;
+}
+cout<<"Addition:"<<sum;
