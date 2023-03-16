@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int a,b;
+    cout<<"The value:"<<endl;
+    cin>>a>>b;
+    string ANSWER=(a==b)?"Same":"Different";
+    cout<<ANSWER;
+  return 0;
+}
