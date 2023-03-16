@@ -9,3 +9,5 @@ int main() {
     cout<<ANSWER;
   return 0;
 }
+
+// variable=(condition)? ExpressionTrue : ExpressionFalse; 
