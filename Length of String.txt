@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+string txt = "102030165";
+cout << "The length of the txt string is: " << txt.length();
+}
+//
+#include<iostream>
+#include<array>
+using namespace std;
+int main()
+{
+string myarray={1,2,3,5,6};
+cout<<myarray.length();
+return 0;
+}

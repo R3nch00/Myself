@@ -1,0 +1,7 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+char str[]="November";
+cout<<strlen(str); *only GAP included* 8
+cout<<sizeof(str); *start from the beginning of the word* 9
+}
