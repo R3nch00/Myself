@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+#include<string>
+using namespace std;
+class Vehicle{ //Base class
+    public:
+        string brand="Ford";
+        void honk(){
+            cout<<"Tuut , tuut! \n";
+        }
+};
+class Car{  //Base class
+    public:
+        string model="Mustang 69";
+};
+class Sedan:public Vehicle,public Car{ //Derived class
+    public:
+};
+int main(){
+    Sedan info;
+    info.honk();
+    cout<<info.brand+" "+info.model;
+    return 0;
+}
