@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	string animal[][3]={{"fox","cat","rat"},{"cow","ox","goat"}};
+	for(unsigned int i=0;i<sizeof(animals)/sizeof(animals[0]);i++){
+	for(unisgned j=0;j<sizeof(animals0/sizeeof(string);j++){
+		cout<<animals[i][j]<<" "<<endl;
+	}
+	cout<<endl;
+	}
+	return 0;
+ }

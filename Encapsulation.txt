@@ -1,0 +1,49 @@
+#include<bits/stdc++.h>
+using namespace std;
+class Umar{
+    private:
+        string name;
+    public:
+        void SetName(string N){
+        name=N;
+        }
+       string GetName(){
+        return name;
+        }
+};
+int main(){
+Umar data;
+data.SetName("Omar");
+cout<<"Name:"<<data.GetName();
+return 0;
+}
+//
+#include<bits/stdc++.h>
+using namespace std;
+class Encapsulation
+{
+	private:
+        string x;
+	public:
+		void set()
+		{
+			string a=x;
+			cout<<"name:";
+			cin>>x;
+		}
+		string get()
+		{
+			return x;
+		}
+		void display(){
+		cout<<"Full Name: "<<x+"faruq";
+		}
+};
+int main()
+{
+	Encapsulation obj;
+	obj.set();
+	cout<<"First Name: "<<obj.get()<<endl;
+	obj.display();
+	return 0;
+}

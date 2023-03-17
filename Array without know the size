@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+const int MAX=100;
+void DaigonalSum(int x[][MAX],int n){
+    int p=0,s=0;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            if(i==j)
+                p+=x[i][j];
+            if((i+j)==(n-1))
+                s+=x[i][j];
+        }
+    }
+    cout<<"p:"<<p<<endl;
+    cout<<"s:"<<s<<endl;
+}
+int main(){
+    int a[][MAX]={{1,2,3},{4,5,6},{7,8,9}};
+    DaigonalSum(a,3);//3(represents the num of ROW)
+    return 0;
+}
