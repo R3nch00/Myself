@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int n,r,c;
+cout<<"Enter the number of Rows:";
+cin>>n;
+for(r=1;r<=n;r++){
+    for(c=1;c<=n;c++){
+        cout<<"* ";
+    }
+    cout<<"\n";
+}
+return 0;
+}
