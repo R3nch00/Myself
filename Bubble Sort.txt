@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+void Swap(int *x,int *y){
+    int swaap=*x;
+    *x=*y;
+    *y=swaap;
+}
+void BubbleSort(int Arr[],int n){
+    int i,j;
+    for(i=0;i<n-1;i++)
+        for(j=0;j<n-i-1;j++)
+            if(Arr[j]>Arr[j+1])
+                Swap(&Arr[j],&Arr[j+1]);
+}
+void PrintArray(int Arr[],int size){
+    int i;
+    for(i=0;i<size;i++){
+        cout<<Arr[i]<<" ";
+    }
+}
+int main(){
+int Array[]={2,-6,5,9,4,59,852,0,1};
+int n=sizeof(Array)/sizeof(Array[0]);
+BubbleSort(Array,n);
+cout<<"Sorted Array: \n";
+PrintArray(Array,n);
+return 0;
+}
