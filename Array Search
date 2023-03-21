@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int ArraySearch(int rock[],int n,int i){
+    for(i=0;i<10;i++){
+        if(n==rock[i]){
+    cout<<n<<" was found in index "<<i<<" of the array."<<endl;
+    break;
+      }
+    }
+    if(n!=rock[i]){
+        cout<<"Not found";
+    }
+   return 0;
+}
+int main(){
+    int rock[10]={47,68,24,34,5,75,5,11,9,99};
+    int n,i;
+    cout<<"Enter the number to be searched : "<<flush;
+    cin>>n;
+    ArraySearch(rock,n,i);
+    return 0;
+}
