@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int mimo[50], i, elem, pos, tot;
+    cout<<"Enter the Size of the Array: "<<flush;
+    cin>>tot;
+    cout<<"Enter the Array Elements:\n";
+    for(i=0; i<tot; i++)
+        cin>>mimo[i];
+    cout<<"\nEnter Element to Insert: "<<flush;
+    cin>>elem;
+    cout<<"At Which Position ??? "<<flush;
+    cin>>pos;
+    for(i=tot; i>=pos; i--)
+        mimo[i] = mimo[i-1];
+    mimo[i] = elem;
+    tot++;
+    cout<<"\nThe New Array is:\n";
+    for(i=0; i<tot; i++)
+        cout<<mimo[i]<<"  ";
+    cout<<endl;
+    return 0;
+}
