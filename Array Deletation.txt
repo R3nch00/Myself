@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+   int i,mimo[10]={45,15,65,25,55,50,20},pos;
+   cout<<"Enter position of Element to Delete: ";
+   cin>>pos;
+   if(pos>10)
+   {
+   cout<<"\nThis value is out of range";
+   }
+   else
+   {
+   --pos;
+   for(i=pos;i<=9;i++)
+   {
+    mimo[i]=mimo[i+1];
+   }
+   cout<<"\nNew Array: ";
+   for(i=0;i<9;i++)
+   {
+    cout<<mimo[i]<<" ";
+   }
+ }
+}
